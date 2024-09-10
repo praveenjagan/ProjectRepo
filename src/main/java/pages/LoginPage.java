@@ -16,16 +16,16 @@ public class LoginPage extends UtilMethods {
 	@FindBy(how = How.ID, using = "user-name")
 	WebElement eleUsername;
 
-	public LoginPage enterUsername() {
-		eleUsername.sendKeys("standard_user");
+	public LoginPage enterUsername(String uname) {
+		eleUsername.sendKeys(uname);
 		return this;
 	}
 
 	@FindBy(how = How.NAME, using = "password")
 	WebElement elePassword;
 
-	public LoginPage enterPassword() {
-		elePassword.sendKeys("secret_sauce");
+	public LoginPage enterPassword(String pword) {
+		elePassword.sendKeys(pword);
 		return this;
 	}
 
